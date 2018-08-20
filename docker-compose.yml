@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: ./docker/web
+    volumes:
+      - ./:/var/www/html
+      - ./docker/web/php.ini:/usr/local/etc/php/php.ini
+    working_dir: /var/www/html
+    ports:
+      - "8000:80"
