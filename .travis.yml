@@ -4,5 +4,5 @@ php:
 - 7.1
 
 before_script:
-- curl -s http://getcomposer.org/installer | php
-- php composer.phar install
+- docker-compose run composer install
+- docker-compose up -d
