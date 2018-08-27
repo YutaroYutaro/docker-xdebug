@@ -1,23 +1,28 @@
 <?php
 
-//phpinfo();
+declare(strict_types=1);
 
 $test = 10;
 
-echo $test;
+echo $test . "<br>";
 
 $arrayTest = [1, 2, 3];
+$arrayZero = [];
 
-foreach ($arrayTest as $value){
-    echo $value;
+echo(CheckBool(EchoLoop($arrayTest)));
+echo(CheckBool(EchoLoop($arrayZero)));
+echo(CheckBool("true"));
+
+function EchoLoop(array $arr): bool{
+    if (count($arr) == 0) return false;
+
+    foreach ($arr as $value){
+        echo $value . "<br>";
+    }
+
+    return true;
 }
 
-$test = 20;
-
-//if(!isset($_SESSION)){
-//    session_start();
-//}
-//
-//$_SESSION['test'] = $test;
-//
-//echo $_SESSION['test'];
+function CheckBool(bool $bool): string {
+    return $bool ? "exist array.<br>" : "not exist array.<br>";
+}

@@ -1,12 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: nishikawa
- * Date: 2018/08/27
- * Time: 15:30
- */
+declare(strict_types=1);
+namespace Tests;
 
 class Calc
 {
+    public function add(int $x, int $y) : int
+    {
+        return ($x * $y);
+    }
 
+    public function sub(int $x, int $y) : int
+    {
+        return ($x - $y);
+    }
 }
