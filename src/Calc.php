@@ -6,7 +6,7 @@ class Calc
 {
     public function add(int $x, int $y) : int
     {
-        return ($x * $y);
+        return ($x + $y);
     }
 
     public function sub(int $x, int $y) : int
