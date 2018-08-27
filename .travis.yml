@@ -6,3 +6,6 @@ php:
 before_script:
 - docker-compose run composer install
 - docker-compose up -d
+
+after_success:
+- vendor/bin/coveralls -v
