@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1535363262">
-  <project timestamp="1535363262">
+<coverage generated="1535363676">
+  <project timestamp="1535363676">
     <package name="Tests">
       <file name="/var/www/html/src/Calc.php">
         <class name="Tests\Calc" namespace="Tests">
